@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;    
+    text-decoration: none;
+    box-sizing: border-box;
+    outline: none;  
+    font-family: 'Ubuntu', sans-serif;  
+}
+
+body {
+    background-color: rgba(211, 235, 255, 0.651);
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(10px);    
+    display: flex;    
+    justify-content: center;
+    gap: 50px;   
+}
+
+.card-principal {    
+    max-width: 400px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 100px; 
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px;
+    gap: 5px;
+    padding: 10px;
+    background: linear-gradient(90deg, rgba(55, 164, 253, 0.158), rgba(255, 164, 27, 0.2)), rgba(78, 78, 78, 0.1);
+    box-shadow: 0px 4px 75px -10px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+}
+
+.topo {    
+    font-weight: bold;     
+}
+
+.cidade {
+    font-weight: bold;
+    font-size: 50px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.temp-medida{
+    display: flex;
+    justify-content: center;
+}
+
+.temp, .medida {    
+    font-size: 90px;
+}
+
+.clima {
+    font-size: 30px;
+}
+
+.min-max {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.botoes {
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.botoes button {
+    background-color: rgba(223, 238, 238, 0.24);
+    border: 2px solid #fff;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;    
+}
+
+.botoes button:hover {
+    background-color: #fff;
+    box-shadow: 1px 1px 20px #fff  ;
+}
+
+.historico {
+    background: linear-gradient(90deg,rgba(255, 164, 27, 0.315),rgba(55, 164, 253, 0.425)), rgba(78, 78, 78, 0.1);
+    box-shadow: 0px 4px 75px -10px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(20px);  
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+table th{
+    border: 1px outset #fff;
+    text-align: left;
+}
+
+table th, td {
+    padding: 1px 5px;
+}
+
+table tr:hover {
+    background-color: #fff;
+    box-shadow: 1px 1px 20px #fff  ;
+}
+
+table td {
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    text-align: center;
+}
+
+table tr img{
+    width: 45px;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+}

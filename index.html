@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Desafio Enext JavaScript</title>
+</head>
+<body>    
+    <div class="card-principal">
+        <h1 class="topo"></h1>
+        <div class="conteudo">
+            <p class="cidade"></p>
+            <img src="icons/tempo-icones/unknown.png" alt="" class="icon-tempo">
+            <div class="temp-medida">
+                <div class="temp"></div>
+            </div>  
+            <div class="clima"></div>    
+            <div class="min-max">
+                <div class="min"></div>
+                <div class="max"></div>
+            </div> 
+            <div class="data"></div>  
+        </div>
+        <div class="botoes">
+            <button onclick="salvarClima()">Salvar Clima</button>
+            <button onclick="mostrarClima()" class="btn-mostrar">Mostrar Histórico</button>
+            <button onclick="esconderClima()" class="btn-esconder" hidden>Esconder Histórico</button>
+        </div>      
+    </div>
+    <div class="historico" hidden>
+        <table>
+            <thead>
+                <th>Cidade</th>
+                <th>Temp(ºc)</th>
+                <th>Icon</th>
+                <th>Clima</th>
+                <th>Data</th>                
+                <th>Min / Máx</th>
+            </thead>
+            <tbody class="tbody">                
+            </tbody>            
+        </table>
+    </div>
+    <script src="/script/script.js"></script>
+</body>
+</html>
