@@ -48,7 +48,7 @@ function alteraDom (result) {
     min.innerText = `min ${parseInt(result.main.temp_min)}ºc`;
     max.innerText = `máx ${parseInt(result.main.temp_max)}ºc`; 
     let iconName = result.weather[0].icon;
-    iconTempo.setAttribute('src', '/icons/tempo-icones/'+iconName+'.png');    
+    iconTempo.setAttribute('src', './icons/tempo-icones/'+iconName+'.png');    
 }
 
 //-------------Formatando a data-----------------
